@@ -1,3 +1,6 @@
+/* Recomiendo comentar todo e ir probando cada seccion */
+
+/* Sección */
 
 let numeroUno = prompt("Introduce un numero para saber si es mayor")
 let numeroDos = prompt("Introduce otro numero")
@@ -17,6 +20,7 @@ if (numeroUno === numeroDos) {
     console.log("Los numeros son diferentes")
 }
 
+
 numeroUno = prompt("Introduce un numero para evaluarlo")
 numeroDos = prompt("Introduce otro numero")
 
@@ -28,6 +32,7 @@ if (numeroUno > numeroDos) {
     console.log("Los numeros son iguales")
 }
 
+/* Sección */
 
 let numeroTres = prompt("Introduce un numero para otro ejercico")
 let numeroCuatro = prompt("Introduce otro numero")
@@ -43,6 +48,7 @@ if (numeroTres < numeroCuatro && numeroTres <numeroCinco) {
     console.log("los numero son iguales ingrese diferentes para evaluar")
 }
 
+/* Sección */
 
 let personaUno = {
     nombre: prompt("Persona 1 ingresa tu nombre"),
@@ -50,14 +56,14 @@ let personaUno = {
     altura: prompt("Persona 1 ingresa altura en cm")
 }
 
-console.table(personaUno)
+/* console.table(personaUno) */ /* Esto es por si se quiere visualizar el objeto */
 
 let personaDos = {
     nombreDos: prompt("Persona 2 ingresa tu nombre"),
     edadDos: prompt("Persona 2 ingresa tu edad"),
     alturaDos: prompt("Persona 2 ingresa altura en cm")
 }
-console.table(personaDos)
+/* console.table(personaDos) */ /* esto es por si se quiere visualizar el objeto */
 
 if (personaUno.altura > personaDos.alturaDos) {
     console.log("La persona 1 es mas Alta")
@@ -71,6 +77,8 @@ if (personaUno.edad > personaDos.edadDos) {
     console.log("La persona 2 tiene mas edad")
 }
 
+/* Sección */
+
 let nombreConducir = prompt("Requisitos conducir, Introduce tu nombre")
 let edadConducir = prompt("Introduce tu edad")
 let alturaConducir = prompt("Introduce tu altura en cm")
@@ -83,6 +91,7 @@ if (edadConducir >= 18 && alturaConducir >= 150 && visionConducir >= 10) {
 
 }
 
+/* Sección */
 
 let nombreVip = prompt("Accesos, Introduce tu nombre por favor")
 let paseVip  = prompt("Introduce tu pase vip o normal")
@@ -118,6 +127,7 @@ if (nombreVip == "carlos" || paseVip == "vip") {
     }
 }
 
+/* Sección */
 
 let numeroIncognita = 7
 let numeroIngresado = prompt("Juguemos adivina el adivinaNumero, ingresa un numero entre 1 y 10: Intento uno")
@@ -150,7 +160,7 @@ if (numeroIngresado == numeroIncognita){
    console.log("El numero ingresado es mayor, lo siento era el ultimo intento");
 }
 
-
+/* Sección */
 
 let edadRango = prompt("Ingresa tu edad para rankearte :D")
 
@@ -165,6 +175,8 @@ if (edadRango >= 0 && edadRango <= 12) {
 }else if(edadRango >= 100){
     console.log("En realidad eres tan lonjevo? (mayor)");
 }
+
+/* Sección */
 
 let playerUno = prompt("Jugador uno: Ingresa piedra, papel o tijeras   -ingresar cualquier otro valor sera trampa-")
 let playerDos = prompt("Jugador dos: Ingresa piedra, papel o tijeras   -ingresar cualquier otro valor sera trampa-")
@@ -188,6 +200,7 @@ if (playerUno == "piedra" && playerDos == "tijeras") {
 
 }
 
+/* Sección */
 
 let colorswichado = prompt("Hola, ingresa un color!!")
 
@@ -218,6 +231,7 @@ switch (colorswichado) {
         break;
 }
 
+/* Sección */
 
 let operacionValor = parseInt(prompt ("ingrese un numero por favor"))
 let operacionValorDos = parseInt(prompt ("ingrese otro numero por favor"))
@@ -235,6 +249,7 @@ if (operador == "suma") {
     console.log(operacionValor / operacionValorDos);
 }
 
+/* Sección */
 
 let documento = {
     documentoNombre: prompt("Introduce el nombre en tu documento"),
