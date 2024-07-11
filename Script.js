@@ -134,30 +134,33 @@ let numeroIngresado = prompt("Juguemos adivina el adivinaNumero, ingresa un nume
 
 if (numeroIngresado == numeroIncognita){
     console.log("Ganaste, adivinaste el numero");
-}else if(numeroIngresado < numeroIncognita){
-    console.log("El numero ingresado es menor, vuelve a intentarlo");
-}else if (numeroIngresado > numeroIncognita){
-    console.log("El numero ingresado es mayor, vuelve a intentarlo");
-}
+}else {
+    if (numeroIngresado > numeroIncognita){
+        console.log("El numero ingresado es mayor, vuelve a intentarlo");
+    } else{
+        console.log("El numero ingresado es menor, vuelve a intentarlo");
+    }
 
-numeroIngresado = prompt("Intento Dos")
+    numeroIngresado = prompt("Juguemos adivina el adivinaNumero, ingresa un numero entre 1 y 10: Intento dos")
 
-if (numeroIngresado == numeroIncognita){
-    console.log("Ganaste, adivinaste el numero");
-}else if(numeroIngresado < numeroIncognita){
-   console.log("El numero ingresado es menor, vuelve a intentarlo");
-}else if (numeroIngresado > numeroIncognita){
-   console.log("El numero ingresado es mayor, vuelve a intentarlo");
-}
+    if (numeroIngresado == numeroIncognita){
+        console.log("Ganaste, adivinaste el numero");
+    }else {
+        if (numeroIngresado > numeroIncognita){
+            console.log("El numero ingresado es mayor, vuelve a intentarlo");
+        } else{
+            console.log("El numero ingresado es menor, vuelve a intentarlo");
+        }
+        numeroIngresado = prompt("Juguemos adivina el adivinaNumero, ingresa un numero entre 1 y 10: Intento tres")
 
-numeroIngresado = prompt("Intento Dos")
+        if (numeroIngresado == numeroIncognita){
+            console.log("Ganaste, adivinaste el numero");
+        }else {
+           console.log("Lo sentimos, acabaron los intentos acabaron, jugamos despues");
 
-if (numeroIngresado == numeroIncognita){
-    console.log("Ganaste, adivinaste el numero");
-}else if(numeroIngresado < numeroIncognita){
-   console.log("El numero ingresado es menor, lo siento era el ultimo intento");
-}else if (numeroIngresado > numeroIncognita){
-   console.log("El numero ingresado es mayor, lo siento era el ultimo intento");
+        }
+    }    
+
 }
 
 /* Sección */
@@ -269,3 +272,6 @@ let respuesta = prompt("Tus datos son correctos? si o no, Nombre: " + documento.
     }else{
         console.log("Algo salio mal reintente mas tarde");
     }
+
+
+    
